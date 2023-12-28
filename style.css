@@ -1,0 +1,366 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: black;
+    overflow-x: hidden;
+}
+#homeback{
+    height: 740px;
+    width: 1535px;
+    margin: 0;
+}
+.navbar{
+    height: 100%;
+    width: 250px;
+    position: absolute;
+    background: transparent;
+    z-index: 1;
+    transition: 0.5s ease;
+    transform: translateX(-250px);
+}
+.navbar .head{
+    color: black ;
+    font-size: 35px;
+    font-weight: bolder;
+    padding: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    
+}
+ol{
+    width: 100%;
+    list-style: none;
+}
+ol li{
+    display: block;
+    width: 100%;
+}
+ol li a{
+    color: black;
+    padding: 15px 10px;
+    text-decoration: none;
+    font-size : 30px;
+    display : block;
+    position : relative;
+    transition : 0.3s;
+    overflow : hidden;
+    letter-spacing: 2px;
+}
+ol li:hover a{
+    background: white;
+    letter-spacing: 10px;
+}
+input{
+   
+    visibility: hidden;
+    display: none;
+}
+span{
+    position: absolute;
+    right: -50px;
+    top: 20px;
+    font-size: 35px;
+    border-radius: 5px;
+    color: #fff;
+    padding: 3px 8px;
+    cursor: pointer;
+    background: #000;
+}
+#check:checked ~ .navbar{
+    transform: translateX(0);
+}
+#check:checked ~ .navbar #bars{
+    display: none;
+}
+.title{
+    position: absolute;
+    font-size: 95px;
+    top: 70px;
+    left: 400px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 5px;
+}
+#tree{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.birds{
+    position: relative;
+    background: linear-gradient(to bottom,green,grey);
+}
+.birds .bir{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    padding: 40px;
+    color: white;
+}
+.bimg{
+    height: 500px;
+    width: 350px;
+    border-radius: 5px;
+    transition: 1s ease;
+
+}
+.container{
+    display: flex;
+}
+.intro h1{
+    font-weight: bolder;
+    font-size: 40px;
+    margin: 10px;
+}
+.intro p{
+    font-size: 20px;
+    margin: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+.card{
+    margin: 50px;
+    height: 500px;
+    box-shadow: 10px 10px 20px black;
+    overflow: hidden;
+}
+.intro{
+    height: 70px;
+    width: 350px;
+    padding: 6px;
+    position: absolute;
+    box-sizing: border-box;
+    color: white;
+    background: rgba(27, 27, 27, .5);
+    bottom: 50px;
+    transition: 0.5s ease;
+}
+.card:hover{
+    cursor: pointer;
+}
+.card:hover .intro{
+    height: 220px;
+    bottom: 50px;
+}
+.card:hover p{
+    opacity: 1;
+    visibility: visible;
+}
+.card:hover .bimg{
+    transform: scale(1.1) rotate(-4deg);
+}
+.para{
+    color: white;
+    font-size: 40px;
+    padding: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.par{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: center;
+    display: flex;
+    color: white;
+    padding: 20px;
+}
+.animals{
+    position: relative;
+    background: linear-gradient(to bottom,grey,#36669d);
+}
+.animals .ani{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    padding: 40px;
+    color: white;
+}
+.aimg{
+    height: 500px;
+    width: 350px;
+    border-radius: 5px;
+    transition: 1s ease;
+
+}
+.Contain{
+    display: flex;
+}
+.about h1{
+    font-weight: bolder;
+    font-size: 40px;
+    margin: 10px;
+}
+.about p{
+    font-size: 20px;
+    margin: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+.car{
+    margin: 50px;
+    height: 500px;
+    box-shadow: 10px 10px 20px black;
+    overflow: hidden;
+}
+.about{
+    height: 70px;
+    width: 350px;
+    padding: 6px;
+    position: absolute;
+    box-sizing: border-box;
+    color: white;
+    background: rgba(27, 27, 27, .5);
+    bottom: 50px;
+    transition: 0.5s ease;
+}
+.car:hover{
+    cursor: pointer;
+}
+.car:hover .about{
+    height: 220px;
+    bottom: 50px;
+}
+.car:hover p{
+    opacity: 1;
+    visibility: visible;
+}
+.car:hover .aimg{
+    transform: scale(1.1) rotate(-4deg);
+}
+.pa{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: center;
+    display: flex;
+    color: white;
+    padding: 20px;
+}
+.reptiles{
+    position: relative;
+    background: linear-gradient(to bottom,#36669d, #4A00E0);
+}
+.reptiles .rep{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    padding: 40px;
+    color: white;
+}
+.rimg{
+    height: 500px;
+    width: 350px;
+    border-radius: 5px;
+    transition: 1s ease;
+
+}
+.Cont{
+    display: flex;
+}
+.descrip h1{
+    font-weight: bolder;
+    font-size: 40px;
+    margin: 10px;
+}
+.descrip p{
+    font-size: 20px;
+    margin: 10px;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s ease;
+}
+.ca{
+    margin: 50px;
+    height: 500px;
+    box-shadow: 10px 10px 20px black;
+    overflow: hidden;
+}
+.descrip{
+    height: 70px;
+    width: 350px;
+    padding: 6px;
+    position: absolute;
+    box-sizing: border-box;
+    color: white;
+    background: rgba(27, 27, 27, .5);
+    bottom: 50px;
+    transition: 0.5s ease;
+}
+.ca:hover{
+    cursor: pointer;
+}
+.ca:hover .descrip{
+    height: 220px;
+    bottom: 50px;
+}
+.ca:hover p{
+    opacity: 1;
+    visibility: visible;
+}
+.ca:hover .rimg{
+    transform: scale(1.1) rotate(-4deg);
+}
+.abou .web{
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    padding: 50px;
+    padding-bottom: 10px;
+}
+.abou .name{
+    color: purple;
+    font-size: 70px;
+    font-weight: bold;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    padding: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-top: 10PX;
+    transition: 0.5s ease;
+    display: inline;
+}
+.name:hover{
+    color: #CAC531;
+    letter-spacing: 5px;
+    translate: 50px;
+    font-size: 100px;
+}
+.abou h2{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 50px;
+}
+.abou a{
+    color: aqua;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 45px;
+    padding-left: 50px;
+    transition: 0.5s ease;
+    padding-bottom: 50px;
+}
+a:hover{
+    color: purple;
+    letter-spacing: 5px;
+}
+.abou{
+    background: linear-gradient(to bottom,#4A00E0 ,black);
+}
